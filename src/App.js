@@ -2,10 +2,12 @@ import './App.css';
 import Home from './pages/Home';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Comics from './pages/Comics';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Router>
         <Routes>
           <Route path='/' element={<Home exact/>}/>
