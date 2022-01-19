@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/characters.css';
 
 const CharactersCard = ({ character }) => {
   return (
+    <Link to={'comics/' + character.id}>
     <div className='card'>
       <img
         src={character.thumbnail.path + '.' + character.thumbnail.extension}
@@ -14,6 +16,7 @@ const CharactersCard = ({ character }) => {
 
       </div>
     </div>
+    </Link>
   );
 };
 
