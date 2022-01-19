@@ -1,0 +1,64 @@
+
+.comics-layout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comic-card{
+  margin-top: 30px;
+  height: 275px;
+  width: 500px;
+  position:relative;
+  display: flex;
+  background: var(--red);
+  border-radius: 5px;
+}
+
+.cover-comic-card{
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  left: 0;
+}
+
+.cover-image{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px 0 5px 5px;
+
+}
+
+.presentation-comic-card{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 65%;
+  display: grid;
+  grid-template-rows: 20% 80%; 
+}
+
+.presentation-header,  .presentation-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.presentation-header{
+  background: var(--white);
+  color: var(--blue);
+}
+
+.header-title{
+  font-family: var(--title);
+}
+
+.presentation-section{
+  overflow: auto;
+}
+
+
+
+

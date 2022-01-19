@@ -26,15 +26,17 @@
 
 .title-text{
   background: #d90429;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: var(--title);
   font-size: 100%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding: 1px;
+  opacity: 1;
+  transition: 0.3s linear;
 }
 
 .title-blur {
-  backdrop-filter: blur(5px);
-  transition: 0.3s linear;
+  backdrop-filter: blur(3px);
+  transition: 0.3s;
 }
 
 .card:hover .title-blur {
@@ -42,7 +44,7 @@
 }
 
 .card:hover .title-text{
-  transform:translateY(50px)
+  opacity: 0;
 }
 
 .characters-layout {

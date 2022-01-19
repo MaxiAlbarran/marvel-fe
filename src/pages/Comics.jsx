@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import ComicsCard from '../components/comicsCard';
 
 
 const Comics = (props) => {
 
   const params = useParams();
 
-  const [comic, setComic] = useState([])
+  const [comics, setComics] = useState([])
   
   useEffect(()=>{
   const getComics = async () => {
@@ -15,7 +16,7 @@ const Comics = (props) => {
         `https://gateway.marvel.com:443/v1/public/characters/${params.id}/comics?apikey=7489a7d4c2fd1b00acad64c61aa4355d`
       );
       const response = await document.json();
-      console.log(response.data.results);
+      setComics(response.data.results);
     } catch (e) {
       console.log(e);
     }
@@ -23,9 +24,13 @@ const Comics = (props) => {
   getComics();
 }, []);
 
+  console.log(comics)
+
   return(
     <div>
-      Hola como estas
+      <div className="comics-layout">
+        <ComicsCard />
+      </div>
     </div>
   );
 };

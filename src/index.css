@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --red:#D90429;
+  --light-red: #EF233C;
+  --white: #EDF2F4;
+  --grey: #8D99AE;
+  --blue: #2B2D42;
+  --title: 'Roboto Condensed', sans-serif;
+}
+
