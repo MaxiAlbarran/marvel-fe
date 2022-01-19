@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import CharactersCard from '../components/charactersCard';
+import '../styles/characters.css'
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getCharacters = async () => {
@@ -11,9 +14,7 @@ const Home = () => {
         );
         const response = await document.json();
         setCharacters(response.data.results);
-        console.log(
-          characters[0].thumbnail.path + '.' + characters[0].thumbnail.extension
-        );
+        setLoading(false);
       } catch (e) {
         console.log(e);
       }
@@ -21,24 +22,21 @@ const Home = () => {
     getCharacters();
   }, []);
 
-  return (
-    <div>
-      <ul>
-        {characters.map((character) => (
-          <li>
-            <img
-              src={
-                character.thumbnail.path + '.' + character.thumbnail.extension
-              }
-              alt='Imagen del personaje'
-              style={{ height: '100px', width: '100px' }}
-            />
-            {character.name}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  if (loading) return <div>Loading...</div>;
+  else {
+    return (
+      <div>
+        <div
+          className='characters-layout'
+         
+        >
+          {characters.map((character) => (
+            <CharactersCard key={character.id} character={character} />
+          ))}
+        </div>
+      </div>
+    );
+  }
 };
 
 export default Home;
