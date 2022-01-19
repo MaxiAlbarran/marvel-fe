@@ -3,15 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0 20px 0;
 }
 
 .comic-card{
-  margin-top: 30px;
   height: 275px;
-  width: 500px;
+  width: 400px;
   position:relative;
   display: flex;
-  background: var(--red);
+  background: var(--blue);
   border-radius: 5px;
 }
 
@@ -53,11 +55,36 @@
 
 .header-title{
   font-family: var(--title);
+  color: var(--blue);
 }
 
 .presentation-section{
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.section-description{
+  font-family: var(--texts);
+  color:var(--white);
+  padding: 5px;
+}
+
+
+.presentation-section::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+
+.presentation-section::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.presentation-section::-webkit-scrollbar-thumb{
+  background-color: var(--grey);
+  border-radius: 50px;
+}
+
 
 
 
