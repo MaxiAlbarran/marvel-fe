@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CharactersCard from '../components/charactersCard';
 import '../styles/characters.css'
+import Loading from '../components/loading';
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
@@ -14,7 +15,7 @@ const Home = () => {
         );
         const response = await document.json();
         setCharacters(response.data.results);
-        setLoading(false);
+        // setLoading(false);
       } catch (e) {
         console.log(e);
       }
@@ -22,7 +23,7 @@ const Home = () => {
     getCharacters();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className='characters-layout'><Loading /></div>;
   else {
     return (
       <div>
