@@ -2,26 +2,10 @@ import React, { useEffect, useState } from 'react';
 import CharactersCard from '../components/charactersCard';
 import '../styles/characters.css'
 import Loading from '../components/loading';
+import useGetCharacters from '../hooks/useGetCharacters';
 
 const Home = () => {
-  const [characters, setCharacters] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const getCharacters = async () => {
-      try {
-        const document = await fetch(
-          'https://gateway.marvel.com:443/v1/public/characters?apikey=7489a7d4c2fd1b00acad64c61aa4355d'
-        );
-        const response = await document.json();
-        setCharacters(response.data.results);
-        setLoading(false);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    getCharacters();
-  }, []);
+  const [characters, loading] = useGetCharacters();
 
   if (loading) return <div className='characters-layout'><Loading /></div>;
   else {
