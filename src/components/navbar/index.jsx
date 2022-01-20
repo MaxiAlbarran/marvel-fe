@@ -16,9 +16,9 @@ const Navbar = () => {
         <Link to={'/'} className='item'>
           Characters
         </Link>
-        <a href='#' className='item'>
-          Creators
-        </a>
+        <Link to={'/avengers'} className='item'>
+          Avengers
+        </Link>
 
         <a href='#' className='item'>
           Series
