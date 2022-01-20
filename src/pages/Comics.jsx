@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ComicsCard from '../components/comicsCard';
+import Loading from '../components/loading';
 
 const Comics = () => {
   const params = useParams();
@@ -26,7 +27,7 @@ const Comics = () => {
 
   console.log(comics);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className='comics-layout'><Loading /></div>;
   else {
     return (
       <div>

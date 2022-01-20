@@ -15,7 +15,7 @@ const Home = () => {
         );
         const response = await document.json();
         setCharacters(response.data.results);
-        // setLoading(false);
+        setLoading(false);
       } catch (e) {
         console.log(e);
       }
