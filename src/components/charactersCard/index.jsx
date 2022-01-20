@@ -4,19 +4,18 @@ import '../../styles/characters.css';
 
 const CharactersCard = ({ character }) => {
   return (
-    <Link to={'comics/' + character.id}>
     <div className='card'>
-      <img
-        src={character.thumbnail.path + '.' + character.thumbnail.extension}
-        alt='Imagen de protagonista'
-        className='image'
-      />
-      <div className="title title-blur">
-      <h4 className='title-text'>{character.name}</h4>
-
+      <div className='card-pr-body'>
+        <img
+          src={character.thumbnail.path + '.' + character.thumbnail.extension}
+          alt='Imagen de protagonista'
+          className='image'
+        />
+      </div>
+      <div className='card-pr-footer'>
+        <h4 className='title-text'>{character.name}</h4>
       </div>
     </div>
-    </Link>
   );
 };
 
