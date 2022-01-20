@@ -5,6 +5,10 @@ import '../../styles/characters.css';
 const CharactersCard = ({ character }) => {
   return (
     <div className='card'>
+      <div className='card-header'>
+        <a href='#' className='character-link'>Learn more about the character</a>
+        <Link to={'/comics/' + character.id} className='comic-link'>See his comics!</Link>
+      </div>
       <div className='card-pr-body'>
         <img
           src={character.thumbnail.path + '.' + character.thumbnail.extension}
