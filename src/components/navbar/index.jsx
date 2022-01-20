@@ -1,20 +1,21 @@
 import React from 'react';
 import '../../styles/navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='logo'>
         <img
-        src='https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4.png'
+          src='https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4.png'
           alt='Logo marvel'
           className='logo-img'
         />
       </div>
       <div className='menu-container'>
-        <a href='#' className='item'>
+        <Link to={'/'} className='item'>
           Characters
-        </a>
+        </Link>
         <a href='#' className='item'>
           Creators
         </a>
