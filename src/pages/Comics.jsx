@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ComicsCard from '../components/comicsCard';
 
-const Comics = (props) => {
+const Comics = () => {
   const params = useParams();
 
   const [comics, setComics] = useState([]);

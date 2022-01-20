@@ -3,12 +3,26 @@ import '../../styles/navbar.css';
 
 const Navbar = () => {
   return (
-    <div className='menu-container'>
-      <ul className='container-items'>
-        <li className='items'>Characters</li>
-        <li className='items'>Creators</li>
-        <li className='items'>Series</li>
-      </ul>
+    <div className='navbar'>
+      <div className='logo'>
+        <img
+        src='https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4.png'
+          alt='Logo marvel'
+          className='logo-img'
+        />
+      </div>
+      <div className='menu-container'>
+        <a href='#' className='item'>
+          Characters
+        </a>
+        <a href='#' className='item'>
+          Creators
+        </a>
+
+        <a href='#' className='item'>
+          Series
+        </a>
+      </div>
     </div>
   );
 };
