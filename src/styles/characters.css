@@ -37,7 +37,6 @@
   top: 0;
   border-radius: 0 0 10px 10px;
   opacity: 0;
-  background-color: rgba(255, 255, 255, 0.5);
   transform: translateY(-20px);
   transition: transform 0.5s, opacity 0.5s;
 }
@@ -58,12 +57,12 @@
 
 /* Se estilizan los links incluidos en el header */
 .card-header .character-link {
-  background: var(--grey);
+  background: rgba(141, 153, 174, 0.8);
   color: #000;
 }
 
 .card-header .comic-link {
-  background: var(--blue);
+  background: rgba(43, 45, 66, 0.8);
   color: #fff;
   text-decoration: none;
 }
@@ -80,7 +79,7 @@
 
 .character-link:hover, .comic-link:hover{
   background-color: none;
-  border-radius: 100px;
+  border-radius: 30px;
 }
 
 /* Se comienza a estilizar lo observable de la carta */

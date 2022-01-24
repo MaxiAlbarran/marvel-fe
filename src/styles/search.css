@@ -22,7 +22,7 @@
 }
 
 ::placeholder{
-  color: #fff;
+  color: var(--grey);
 }
 
 .search-button{
