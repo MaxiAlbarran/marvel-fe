@@ -13,11 +13,11 @@ const Navbar = () => {
         />
       </div>
       <div className='menu-container'>
-        <Link to={'/'} className='item'>
+        <Link to={'/search'} className='item'>
           Characters
         </Link>
-        <Link to={'/avengers'} className='item'>
-          Avengers
+        <Link to={'/'} className='item'>
+          Home
         </Link>
 
         <a href='#' className='item'>
