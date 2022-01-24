@@ -6,8 +6,12 @@ const CharactersCard = ({ character }) => {
   return (
     <div className='card'>
       <div className='card-header'>
-        <Link to={'/character/' + character.id} className='character-link'>Learn more about this character!</Link>
-        <Link to={'/comics/' + character.id} className='comic-link'>See his comics!</Link>
+        <Link to={'/character/' + character.id} className='character-link'>
+          Learn more about this character!
+        </Link>
+        <Link to={'/comics/' + character.id} className='comic-link'>
+          See his comics!
+        </Link>
       </div>
       <div className='card-pr-body'>
         <img
