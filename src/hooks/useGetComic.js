@@ -8,7 +8,7 @@ const useGetComic = (id) => {
     const getComics = async () => {
       try {
         const document = await fetch(
-          `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?apikey=7489a7d4c2fd1b00acad64c61aa4355d`
+          `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?limit=9&apikey=7489a7d4c2fd1b00acad64c61aa4355d`
         );
         const response = await document.json();
         setComics(response.data.results);
