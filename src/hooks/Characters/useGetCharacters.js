@@ -9,7 +9,7 @@ const useGetCharacters = () => {
     const getCharacters = async () => {
       try {
         const document = await fetch(
-          'https://gateway.marvel.com:443/v1/public/characters?limit=9&apikey=7489a7d4c2fd1b00acad64c61aa4355d'
+          'https://gateway.marvel.com:443/v1/public/characters?limit=6&apikey=7489a7d4c2fd1b00acad64c61aa4355d'
         );
         const response = await document.json();
         setCharacters(response.data.results);
