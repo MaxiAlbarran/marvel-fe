@@ -16,5 +16,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  overflow: hidden;
+}
+
+@media (max-width: 625px){
+  .title{
+    width: 100%;
+    font-size: 100%;
+  }
 }
