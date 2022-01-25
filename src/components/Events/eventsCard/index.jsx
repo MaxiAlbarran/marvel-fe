@@ -6,8 +6,8 @@ const EventsCard = ({event}) => {
   return (
     <div className='card'>
       <div className='card-header'>
-        <Link to={'/character/' + event.id} className='characters-link'>
-          Learn more about this event!
+        <Link to={'/charactersEvent/' + event.id} className='characters-link'>
+          Characters in this event
         </Link>
         <Link to={'/comics/' + event.id} className='comics-link'>
           See his comics!
