@@ -9,7 +9,7 @@ const useGetCharacterByName = (name) => {
     setReload(true)
     try {
       const document = await fetch(
-        `https://gateway.marvel.com:443/v1/public/characters?name=${name}&apikey=7489a7d4c2fd1b00acad64c61aa4355d`
+        `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&apikey=7489a7d4c2fd1b00acad64c61aa4355d`
       );
       const response = await document.json();
       setCharacter(response.data.results);
