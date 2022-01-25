@@ -1,5 +1,5 @@
 import React from 'react';
-import useShowCharacterById from '../hooks/useShowCharacterById';
+import useShowCharacterById from '../hooks/Characters/useShowCharacterById';
 import { useParams } from 'react-router-dom';
 import '../styles/presentation.css'
 import CharacterPresentation from '../components/Characters/characterPresentation';
