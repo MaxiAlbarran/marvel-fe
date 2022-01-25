@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className='logo'>
         <img
           src='https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4.png'
-          alt='Logo marvel'
+          alt='Marvel'
           className='logo-img'
         />
       </div>

@@ -16,7 +16,7 @@ const EventsCard = ({ event }) => {
       <div className='card-pr-body'>
         <img
           src={event.thumbnail.path + '.' + event.thumbnail.extension}
-          alt='Imagen de protagonista'
+          alt='Event'
           className='picture'
         />
       </div>

@@ -16,7 +16,7 @@ const ComicsCard = ({ comic }) => {
       <div className='cover-comic-card'>
         <img
           src={comic.thumbnail.path + '.' + comic.thumbnail.extension}
-          alt='Imagen del comic'
+          alt='Comic'
           className='cover-image'
         />
       </div>
