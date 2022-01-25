@@ -3,13 +3,17 @@ import CharactersCard from '../components/Characters/charactersCard';
 import EventsCard from '../components/Events/eventsCard';
 import '../styles/characters.css';
 import Loading from '../components/loading';
-import useGetCharacters from '../hooks/Characters/useGetCharacters';
 import Title from '../components/title';
-import useGetEvents from '../hooks/Events/useGetEvents';
+import useGetResponse from '../hooks/useGetResponse';
 
 const Home = () => {
-  const [characters, loading] = useGetCharacters();
-  const [events, loadingEvents] = useGetEvents();
+
+  const URLCHARS = 'https://gateway.marvel.com:443/v1/public/characters?limit=6&apikey=7489a7d4c2fd1b00acad64c61aa4355d';
+  const URLEVENTS = 'https://gateway.marvel.com:443/v1/public/events?limit=6&apikey=7489a7d4c2fd1b00acad64c61aa4355d';
+
+  const [characters, loading] = useGetResponse(URLCHARS);
+  const [events, loadingEvents] = useGetResponse(URLEVENTS);
+  
 
   if (loading + loadingEvents !== 0) {
     return (

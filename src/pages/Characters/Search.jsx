@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SearchInput from '../../components/search';
-import useGetCharacterByName from '../../hooks/Characters/useGetCharacterByName';
+import useGetCharacterByName from '../../hooks/useGetByName';
 import CharactersCard from '../../components/Characters/charactersCard';
 import '../../styles/characters.css';
 import Loading from '../../components/loading';
