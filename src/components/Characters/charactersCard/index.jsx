@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles/characters.css';
+import '../../../styles/characters.css';
 
 const CharactersCard = ({ character }) => {
   return (

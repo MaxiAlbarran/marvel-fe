@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/presentation.css';
+import '../../../styles/presentation.css';
 
 const CharacterPresentation = ({figure}) => {
   return (

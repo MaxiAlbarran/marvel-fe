@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchInput from '../components/search';
 import useGetCharacterByName from '../hooks/useGetCharacterByName';
-import CharactersCard from '../components/charactersCard';
+import CharactersCard from '../components/Characters/charactersCard';
 import '../styles/characters.css';
 import Loading from '../components/loading';
 

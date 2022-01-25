@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import CharactersCard from '../components/charactersCard';
+import React from 'react';
+import CharactersCard from '../components/Characters/charactersCard';
 import '../styles/characters.css';
 import Loading from '../components/loading';
 import useGetCharacters from '../hooks/useGetCharacters';
