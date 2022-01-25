@@ -17,7 +17,7 @@ const CharactersCard = ({ character }) => {
         <img
           src={character.thumbnail.path + '.' + character.thumbnail.extension}
           alt='Imagen de protagonista'
-          className='image'
+          className='picture'
         />
       </div>
       <div className='card-pr-footer'>

@@ -11,7 +11,7 @@ const CharacterPresentation = ({figure}) => {
         <img
           src={figure.thumbnail.path + '.jpg'}
           alt='Character image'
-          className='image'
+          className='picture'
         />
       </div>
       <div className='body-description'>

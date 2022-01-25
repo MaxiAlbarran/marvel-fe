@@ -17,7 +17,7 @@ const EventsCard = ({ event }) => {
         <img
           src={event.thumbnail.path + '.' + event.thumbnail.extension}
           alt='Imagen de protagonista'
-          className='image'
+          className='picture'
         />
       </div>
       <div className='card-pr-footer-event'>
