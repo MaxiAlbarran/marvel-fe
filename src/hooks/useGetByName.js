@@ -13,7 +13,7 @@ const useGetByName = (URL) => {
       setCharacter(response.data.results);
       setReload(false);
     } catch (e) {
-      console.log(e);
+      alert(e);
     }
   };
   return [character, searchChars, reload];

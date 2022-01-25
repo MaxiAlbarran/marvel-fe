@@ -14,12 +14,12 @@ const useGetResponse = (URL) => {
         setLoading(false)
         
       } catch (e) {
-        console.log(e);
+        alert(e);
       }
     };
 
     getData();
-  }, []);
+  }, [URL]);
 
   return [data, loading];
 };
