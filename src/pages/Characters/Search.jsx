@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import SearchInput from '../components/search';
-import useGetCharacterByName from '../hooks/Characters/useGetCharacterByName';
-import CharactersCard from '../components/Characters/charactersCard';
-import '../styles/characters.css';
-import Loading from '../components/loading';
+import SearchInput from '../../components/search';
+import useGetCharacterByName from '../../hooks/Characters/useGetCharacterByName';
+import CharactersCard from '../../components/Characters/charactersCard';
+import '../../styles/characters.css';
+import Loading from '../../components/loading';
 
 const Search = () => {
   const [name, setName] = useState('');

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import ComicsCard from '../components/comicsCard';
-import Loading from '../components/loading';
-import useGetComic from '../hooks/Characters/useGetComic';
+import ComicsCard from '../../components/comicsCard';
+import Loading from '../../components/loading';
+import useGetComic from '../../hooks/Characters/useGetComic';
 
 const Comics = () => {
   const params = useParams().id;
