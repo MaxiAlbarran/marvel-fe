@@ -5,6 +5,7 @@ import Comics from './pages/Comics';
 import Navbar from './components/navbar';
 import Character from './pages/Character';
 import Search from './pages/Search';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route path='/' element={<Home exact/>}/>
           <Route path='/comics/:id' element={<Comics exact/>}/>
           <Route path='/character/:id' element={<Character exact/>}/>
-          <Route path='/search/' element={<Search exact/>}/>
+          <Route path='/searchCharacters/' element={<Search exact/>}/>
+          <Route path='/searchEvents/' element={<Events exact/>}/>
         </Routes>
       </Router>
     </div>

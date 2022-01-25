@@ -13,16 +13,15 @@ const Navbar = () => {
         />
       </div>
       <div className='menu-container'>
-        <Link to={'/search'} className='item'>
+        <Link to={'/searchCharacters'} className='item'>
           Characters
         </Link>
         <Link to={'/'} className='item'>
           Home
         </Link>
-
-        <a href='#' className='item'>
-          Series
-        </a>
+        <Link to={'/searchEvents'} className='item'>
+          Events
+        </Link>
       </div>
     </div>
   );

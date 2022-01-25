@@ -1,0 +1,117 @@
+/* Maquetado de la pagina, se encuentra esta clase en Home.jsx */
+.characters-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 5px;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Esta parte de la card aparecerá cuando el mouse pase por encima de la card */
+.card-header {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.card-header > * {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s;
+  font-family: var(--title);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Se estilizan los links incluidos en el header */
+.card-header .characters-link {
+  background: rgba(237, 242, 244, 0.9);
+  color: #000;
+}
+
+.card-header .comics-link {
+  background: rgba(217, 4, 41, 0.9);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Manejo del efecto hover */
+.card:hover .card-header {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card:hover .card-header > * {
+  opacity: 1;
+}
+
+.characters-link:hover, .comics-link:hover{
+  background-color: none;
+  border-radius: 30px;
+}
+
+/* Se comienza a estilizar lo observable de la carta */
+.card-pr-body {
+  width: 100%;
+  height: 90%;
+  border-radius: 0 0 10px 10px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-pr-footer-event {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  border-radius: 0 0 10px 10px;
+}
+
+.title-text {
+  color: #fff;
+  font-family: var(--title);
+  font-size: 100%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 1px;
+  opacity: 1;
+  transition: 0.3s linear;
+  width: 100%;
+}
