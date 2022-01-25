@@ -6,7 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--blue);
-  background: linear-gradient(140deg, rgba(51,51,51,1), rgba(221,24,24,1) );
+  background: linear-gradient(
+    140deg,
+    rgba(51, 51, 51, 1),
+    rgba(221, 24, 24, 1)
+  );
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -18,13 +22,12 @@ code {
     monospace;
 }
 
-:root{
-  --red:#D90429;
-  --light-red: #EF233C;
-  --white: #EDF2F4;
-  --grey: #8D99AE;
-  --blue: #2B2D42;
+:root {
+  --red: #d90429;
+  --light-red: #ef233c;
+  --white: #edf2f4;
+  --grey: #8d99ae;
+  --blue: #2b2d42;
   --title: 'Roboto Condensed', sans-serif;
-  --text: 'Yantramanav', sans-serif;
+  --text: 'Dongle', sans-serif;
 }
-
