@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../../styles/events.css'
+import '../../../styles/events.css';
 
-const EventsCard = ({event}) => {
+const EventsCard = ({ event }) => {
   return (
     <div className='card'>
       <div className='card-header'>
         <Link to={'/charactersEvent/' + event.id} className='characters-link'>
-          Characters in this event
+          See the characters in this event!
         </Link>
-        <Link to={'/comics/' + event.id} className='comics-link'>
-          See his comics!
+        <Link to={'/comicsEvent/' + event.id} className='comics-link'>
+          Checkout this comics!
         </Link>
       </div>
       <div className='card-pr-body'>

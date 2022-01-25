@@ -10,7 +10,7 @@ const CharactersCard = ({ character }) => {
           Learn more about this character!
         </Link>
         <Link to={'/comics/' + character.id} className='comic-link'>
-          See his comics!
+          Checkout this comics!
         </Link>
       </div>
       <div className='card-pr-body'>
