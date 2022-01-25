@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+.presentation-container{
+  margin: 30px 60px 0 300px;
+  width: 800px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: solid 1px #fff;
+}
+
+.header{
+  position: absolute;
+  width: 65%;
+  height: 20%;
+  top:0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: solid 1px white;
+}
+
+.side-image{
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  left: 0;
+}
+
+.body-description{
+  position: absolute;
+  width: 65%;
+  height: 80%;
+  bottom:0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: solid 1px white;
+}
+
